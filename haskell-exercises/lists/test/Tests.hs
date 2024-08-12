@@ -89,7 +89,7 @@ main = hspec $ do
       decimal 16 "1F" `shouldBe` 31
       
   describe "firsts" $ do
-    it "[1, 2, 5]" $ do
+    it "[1, 3, 5]" $ do
       firsts [1, 3, 5] `shouldBe` [[1], [1, 3], [1, 3, 5]]
     it "Hello" $ do          
       firsts "Hello" `shouldBe` ["H", "He", "Hel", "Hell", "Hello"]
